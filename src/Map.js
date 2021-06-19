@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
+import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 mapboxgl.accessToken='pk.eyJ1Ijoic2llbWFua29oZSIsImEiOiJja3Ezc2FvcWMwOGdhMnBxenZ1bWJzazJmIn0.3_qXAhQ6MZGcKUz1mNbNmg';
