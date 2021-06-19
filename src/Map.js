@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
 
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 mapboxgl.accessToken='pk.eyJ1Ijoic2llbWFua29oZSIsImEiOiJja3Ezc2FvcWMwOGdhMnBxenZ1bWJzazJmIn0.3_qXAhQ6MZGcKUz1mNbNmg';
 
 class Mapp extends Component {
