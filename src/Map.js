@@ -1,4 +1,7 @@
+
+
 import React, { Component } from 'react';
+//eslint-disable-next-line import/no-webpack-loader-syntax
 import mapboxgl from '!mapbox-gl';
 
 
